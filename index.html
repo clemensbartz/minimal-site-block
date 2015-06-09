@@ -1,54 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <meta charset="utf-8">
-    <title>de.clemensbartz :: minimal-site-block</title>
-    <meta name="robots" content="index,follow">
-    <meta name="description" content="minimal-site-block: A Firefox add-on for blocking sites easily.">
-    <link rel="icon" type="image/ico" href="/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <title>de.clemensbartz - Repositories by Clemens Bartz</title>
+        <meta charset="utf-8" />
+        <meta name="robots" content="index,follow">
+        <meta name="description" content="">
+        <link rel="icon" type="image/ico" href="/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1 class="title">Open Source repositories by <a href="http://www.clemens-bartz.de">Clemens Bartz</a></h1>
+        <header>
+           <a href="http://clemensbartz.de"><h1>de.clemensbartz</h1></a>
+           <p>Repositories by <a href="http://www.clemens-bartz.de">Clemens Bartz</a><p>
+        </header>
+        <section>
+           <h2>Minimal Site Block</h2>
+           <p><a href="minimal-site-block">Minimal Site Block</a> is a Firefox add-on for blocking sites easily with a minimal interface.</p>
+           <h3>Introduction</h3>
+           <p>This Add-on provides you with a (very) basic interface to block websites.</p>
 
-    <h1>de</h1>
-    <h2>clemensbartz</h2>
-    <h3><a href="http://clemensbartz.de/minimal-site-block/">minimal-site-block</a></h3>
-    <span>A Firefox add-on for blocking sites easily.</span>
+           <h3>What does this plugin do?</h3>
+           <p>Minimal Site Block has been developed to block sites. You can specify the sites in the add-on settings.</p>
+           <p>At the moment the following block operations are supported:</p>
+           <p><ul>
+             <li>Block specific URL (with Backslash!): http://www.firefox.com/</li>
+             <li>Block URL and all pages under this URL: http://www.firefox.com/*</li>
+             <li>Block all URLs containing the pattern (with one wildcard (*) at maximum): *.firefox.com</li>
+             <li>Block protocols: http://*, file://*, data:*</li>
+           </ul></p>
+           <p>You can change the settings in the Extensions (about:addons).</p>
 
-    <h4>Introduction</h4>
-    <p>This Add-on provides you with a (very) basic interface to block websites.</p>
+           <h3>What does this plugin <b>not</b> do?</h3>
+           <p>Minimal Site Block will not clutter your Firefox with <b>icons</b>, <b>toolbars</b> or <b>buttons</b>.</p>
 
-    <h4>What does this plugin do?</h4>
-    <p>Minimal Site Block has been developed to block sites. You can specify the sites in the add-on settings.</p>
-    <p>At the moment the following block operations are supported:</p>
-    <p><ul>
-        <li>Block specific URL (with Backslash!): http://www.firefox.com/</li>
-        <li>Block URL and all pages under this URL: http://www.firefox.com/*</li>
-        <li>Block all URLs containing the pattern (with one wildcard (*) at maximum): *.firefox.com</li>
-        <li>Block protocols: http://*, file://*, data:*</li>
-    </ul></p>
-    <p>You can change the settings in the Extensions (about:addons).</p>
+           <h3>Current limitations</h3>
+           <p><ul>
+           <li>There can only be one wildcard at a time due <a href="https://developer.mozilla.org/en-US/Add-ons/SDK/Low-Level_APIs/util_match-pattern">using the wildcard option</a>.</li>
+           </ul></p>
 
-    <h4>What does this plugin <b>not</b> do?</h4>
-    <p>Minimal Site Block will not clutter your Firefox with <b>icons</b>, <b>toolbars</b> or <b>buttons</b>.</p>
+           <h3>Interested in development?</h3>
+           <p>Have a look at the <a href="https://github.com/clemensbartz/minimal-site-block">Github-Repostory</a>.</p>
 
-    <h4>Current limitations</h4>
-    <p><ul>
-        <li>There can only be one wildcard at a time due <a href="https://developer.mozilla.org/en-US/Add-ons/SDK/Low-Level_APIs/util_match-pattern">using the wildcard option</a>.</li>
-    </ul></p>
+           <h3>Download</h3>
+           <p>You can download this add-on from the <a href="https://addons.mozilla.org/firefox/addon/minimal-site-block/">Firefox Add-On page</a>.</p>
+           <p>Or you can download the source code and compile the add-on for yourself.</p>
 
-    <h4>Interested in development?</h4>
-    <p>Have a look at the <a href="https://github.com/clemensbartz/minimal-site-block">Github-Repostory</a>.</p>
-
-    <h4>Download</h4>
-    <p>You can download this add-on from the <a href="https://addons.mozilla.org/firefox/addon/minimal-site-block/">Firefox Add-On page</a>.
-    <p>Or you can download the source code and compile the add-on for yourself.</p>
-
-    <h4>Licence</h4>
-    <p>This plugin is distributed under the MPL 2.0 Licence.
-
-    <p>&nbsp;</p>
-    <a href="http://www.clemens-bartz.de/impressum">Impressum</a>
+           <h3>Licence</h3>
+           <p>This plugin is distributed under the MPL 2.0 Licence.</p>
+        </section>
 </body>
 </html>
