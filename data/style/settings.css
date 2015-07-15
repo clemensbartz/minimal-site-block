@@ -2,7 +2,7 @@
 	display: block;
 }
 
-#form, #addRule, #remove {
+#form, #addRule, #remove, #exportButton {
 	display: none;
 }
 

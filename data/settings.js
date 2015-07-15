@@ -9,6 +9,7 @@ window.addEventListener("load", function onLoad(event) {
 	const rulesList = document.getElementById("rulesList");
 	const removeList = document.getElementById("removeList");
 	const remove = document.getElementById("remove");
+	const exportButton = document.getElementById("exportButton");
 
 	if (rule != null) {
 		rule.addEventListener("change", onRuleChange);
@@ -62,7 +63,7 @@ function changeMessage(color, msg) {
 	while (message.lastChild) {
 		message.removeChild(message.lastChild);
 	}
-	
+
 	message.style.borderColor = color;
 	message.appendChild(document.createTextNode(msg));
 }
@@ -94,7 +95,7 @@ const onRuleChange = function(data) {
 
 	if (isDomainNamePrefixedWithAsterixAndDot(rule.value)) {
 		go = true;
-		changeMessage("green", "All URLs and subpages containing the domain" + 
+		changeMessage("green", "All URLs and subpages containing the domain" +
 			" will be blocked.");
 	}
 
@@ -129,6 +130,8 @@ const onShowFormClick = function(data) {
 
 
 const onGetRules = function(data) {
+	exportButton.style.display = "none";
+
 	while (rulesList.lastChild) {
 		rulesList.removeChild(rulesList.lastChild);
 	}
@@ -147,7 +150,11 @@ const onGetRules = function(data) {
 		return;
 	}
 
+	let rules = "";
+
 	for each (let rule in data) {
+		rules += rule + "\n";
+
 		let li = document.createElement("li");
 		li.appendChild(document.createTextNode(rule));
 		rulesList.appendChild(li);
@@ -157,6 +164,9 @@ const onGetRules = function(data) {
 		option.value = rule;
 		removeList.appendChild(option);
 	}
+
+	exportButton.setAttribute("href", "data:text/text;charset=utf-8," + encodeURIComponent(rules));
+	exportButton.style.display = "inline";
 
 	remove.style.display = "inline";
 };
@@ -174,6 +184,6 @@ const onRemoveClick = function(data) {
 		return;
 	}
 
-	self.port.emit("remove", 
+	self.port.emit("remove",
 		removeList.options[removeList.selectedIndex].value);
 }
