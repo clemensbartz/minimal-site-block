@@ -1,4 +1,4 @@
-# Minimal Site block
+# Minimal Site Block
 
 ## Introduction
 
@@ -16,7 +16,7 @@ This Add-on is only developed using High-Level-APIs. Please refrain from using o
 Having downloaded the SDK, you can activate it like this:
 
     source bin/activate
-    
+
 If you want to try this Add-on, try the following commands:
 
 ### Desktop
