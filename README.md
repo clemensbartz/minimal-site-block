@@ -1,5 +1,7 @@
 # Minimal Site Block
 
+**This Add-on has been discontinued in favor of [uBlock Origin](https://addons.mozilla.org/de/firefox/addon/ublock-origin/). You can export your rules from Minimal Site Block and import them into uBlock Origin.**
+
 ## Introduction
 
 This Add-on provides you with a basic interface to block websites. Since it uses High-Level-APIs from the Firefox Add-on SDK, this Add-on is able to run on a desktop as well as a mobile Firefox.
