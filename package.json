@@ -6,7 +6,7 @@
   "homepage": "http://clemensbartz.de/minimal-site-block/",
   "author": "Clemens Bartz",
   "license": "MPL 2.0",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "icon": "icons/icon-48.png",
   "icon64": "icons/icon-64.png",
   "permissions": {"private-browsing": false},
